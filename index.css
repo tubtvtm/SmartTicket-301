@@ -1,0 +1,164 @@
+body {
+    background-color: #f7f9fc; /* สีฟ้าอ่อนนวล */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+    background: linear-gradient(135deg, #5b5e63, #cacccc);
+    color: white;
+    padding: 0 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo {
+    height: 80px; /* ขนาดใหญ่ตามต้องการ */
+    width: auto;
+    object-fit: contain;
+    /* ลบ filter ที่ทำให้เป็นสีขาว */
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+/* สำหรับหน้าจอขนาดเล็ก */
+@media (max-width: 768px) {
+    .header {
+        height: 90px;
+        padding: 0 1.5rem;
+    }
+    
+    .header .logo {
+        height: 70px;
+    }
+}
+
+/* เอฟเฟกต์เมื่อ hover */
+.header .logo:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.3));
+}
+
+#accountAddress {
+    font-size: 0.85rem;
+    color: #ffffff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    white-space: nowrap;
+}
+
+.btn-gradient {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border: none;
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+
+/* ปุ่ม Cancel */
+.btn-secondary:hover {
+    background-color: #dc3545; /* สีแดง */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* ปุ่ม Confirm */
+.btn-gradient:hover {
+    background-color: #28a745 !important; /* สีเขียว */
+    color: white !important;
+    transition: background-color 0.3s ease;
+}
+.event-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #ffffff; /* สีขาว */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.concert {
+    border-top: 5px solid #ff9aa2; /* สีชมพูอ่อน */
+}
+.conference {
+    border-top: 5px solid #ffb7b2; /* สีชมพูพาสเทล */
+}
+.exhibition {
+    border-top: 5px solid #ffdac1; /* สีพีชอ่อน */
+}
+.business {
+    border-top: 5px solid #e2f0cb; /* สีเขียวอ่อน */
+}
+.ticket-card {
+    background-color: #ffffff; /* สีขาว */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.ticket-header {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ticket-detail {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+.ticket-valid {
+    color: #81c784; /* สีเขียวพาสเทล */
+    font-weight: bold;
+}
+.ticket-invalid {
+    color: #e57373; /* สีแดงพาสเทล */
+    font-weight: bold;
+}
+.modal-content {
+    border-radius: 15px;
+    background-color: #f9f9f9; /* สีขาวนวล */
+}
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af); /* สี Gradient */
+    color: white;
+    padding: 1rem 0;
+    font-size: 1rem;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+footer span.fw-bold {
+    font-weight: 700; /* ทำให้ตัวเลขหนา */
+    color: #040404; /* สีเหลืองทอง */
+}
