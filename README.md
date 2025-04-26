@@ -14,3 +14,5 @@ SmartTickets เป็นแพลตฟอร์มจำหน่ายตั�
 
 ## UX/UI
 ![Alt text](./images/Screenshot%202025-04-26%20103911.png)
+
+![Alt text](./images/Screenshot 2025-04-26 145357.png).
