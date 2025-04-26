@@ -154,7 +154,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         alert("Please install MetaMask to use this application!");
     }
     
-    // Set up event listeners
     document.getElementById('connectWallet').addEventListener('click', connectWallet);
     document.querySelectorAll('.book-btn').forEach(btn => {
         btn.addEventListener('click', showBookingModal);
@@ -162,6 +161,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('ticketQuantity').addEventListener('input', updateTotalPrice);
     document.getElementById('confirmBooking').addEventListener('click', confirmBooking);
     document.getElementById('invalidateTicket').addEventListener('click', invalidateTicket);
+    document.getElementById('aboutButton').addEventListener('click', () => {
+        const aboutModal = new bootstrap.Modal(document.getElementById('aboutModal'));
+        aboutModal.show();
+    });
 });
 
 // Connect wallet
@@ -192,7 +195,7 @@ function logoutWallet() {
     account = null;
     document.getElementById('accountAddress').textContent = 'Not connected';
 
-    // เปลี่ยนปุ่มกลับเป็น "Connect Wallet" พร้อมไอคอน
+
     const connectWalletButton = document.getElementById('connectWallet');
     connectWalletButton.innerHTML = '<i class="fas fa-wallet me-2"></i>Connect Wallet';
     connectWalletButton.classList.remove('btn-danger');

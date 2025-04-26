@@ -3,8 +3,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .header {
-    background: linear-gradient(135deg, #5b5e63, #cacccc);
-    color: white;
+    background: #ffffff; /* พื้นหลังสีขาว */
+    color: #000000; /* ข้อความสีดำ */
     padding: 0 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 100px;
@@ -145,20 +145,13 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 footer {
-    background: linear-gradient(135deg, #2c3e50, #4ca1af); /* สี Gradient */
-    color: white;
+    background: #ffffff; /* พื้นหลังสีขาว */
+    color: #000000; /* ข้อความสีดำ */
     padding: 1rem 0;
-    font-size: 1rem;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    border-top: 1px solid #e0e0e0; /* เส้นขอบด้านบน */
 }
-
-footer p {
-    margin: 0;
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
-}
-
-footer span.fw-bold {
-    font-weight: 700; /* ทำให้ตัวเลขหนา */
-    color: #040404; /* สีเหลืองทอง */
+.modal-body img {
+    border: 3px solid #ddd; /* เส้นขอบรอบรูป */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เงารอบรูป */
 }
