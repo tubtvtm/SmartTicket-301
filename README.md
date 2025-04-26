@@ -12,6 +12,13 @@ SmartTickets เป็นแพลตฟอร์มจำหน่ายตั�
 
 - 📂จัดตั๋วที่ซื้อจะแสดงใน Your Tickets พร้อมสถานะ Vaild= ใช้งานได้ Invaild = ต้องซื้อใหม่ (อาจเกิดจากยกเลิกหรือข้อผิดพลาด)
 
+## TOOlS
+- 🟧 HTML +🟦 Javascript
+- 🌀 Tailwind CSS
+- 🔷 Solidity
+- 🦊 MetaMask
+- 💎 Web3 
+
 ## Frontend
 ![ตัวอย่างระบบตั๋ว](./images/Screenshot%202025-04-26%20103911.png)
 
